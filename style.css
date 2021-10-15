@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background: url(./images/pexels-polina-kovaleva-8101056.jpg);
+  background-size: cover;
+}
+
+.wrapper{
+  background: linear-gradient(to bottom, #c7c7c7 0%, #161616 100%);
+  max-width: 400px;
+  width: 100%;
+  margin: 135px auto;
+  padding: 25px;
+  border-radius: 19px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  opacity: 0.92;
+}
+
+.wrapper header{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wrapper .my_input{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.my_input input{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.my_input input:focus{
+  border-color: #ffffff;
+}
+
+.my_input button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: rgb(47, 43, 43);
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.my_input button.active{
+  pointer-events: auto;
+}
+
+.my_input button:hover,
+.todo_footer button:hover{
+  background: #a3a3a3;
+}
+
+.wrapper .todoList{
+  max-height: 250px;
+}
+
+.atm_List li{
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 8px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.atm_List li .icon{
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #7a7a7a;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.atm_List li:hover .icon{
+  right: 0px;
+}
+
+.wrapper .todo_footer{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo_footer button{
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: rgb(47, 43, 43);
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #ffffff;
+  pointer-events: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.todo_footer button.active{
+  pointer-events: auto;
+}
+
+.you_have{
+  color:#ebebeb;
+}
